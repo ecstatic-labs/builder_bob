@@ -12,7 +12,7 @@ Postgresql is currently the only supported database adapter.
 
 Add Builder Bob to your Gemfile
 ```
-gem 'builder_bob, :git => 'git://github.com/ecstaticlabs/builder_bob.git''
+gem 'builder_bob, :git => 'git://github.com/ecstatic-labs/builder_bob.git'
 ```
 
 Run bundle install
