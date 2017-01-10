@@ -11,9 +11,13 @@ module BuilderBob
         empty_directory "lib/builder_bob/data_templates/#{name}/"
         create_file "lib/builder_bob/data_templates/#{name}/#{name}.rb"
         append_to_file "lib/builder_bob/data_templates/#{name}/#{name}.rb" do
-          "class #{name.camelize}\n"\
-          "  # Use this method to create data however you wish\n"\
-          "  def self.data\n"\
+          "module BuilderBob\n"\
+          "  module DataTemplates\n"\
+          "    class #{name.camelize}\n"\
+          "      # Use this method to create data however you wish\n"\
+          "      def self.data\n"\
+          "      end\n"\
+          "    end\n"\
           "  end\n"\
           "end"
         end
