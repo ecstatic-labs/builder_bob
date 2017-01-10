@@ -34,6 +34,11 @@ This also appends a builder_bob database environment configuration to ```config/
 
 Builder Bob provides rake tasks to start data templates, save data templates into database files, and load saved data templates into a specified database.
 
+Create a data template named minimal_configuration
+```
+rails g builder_bob:data_template minimal_configuration
+```
+
 Save a data template
 ```
 rake builder_bob:save_data_template\[template_name\]
