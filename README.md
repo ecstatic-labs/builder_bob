@@ -70,8 +70,7 @@ builder_bob:save_data_template\[minimal_configuration\]
 This task resets the ```builder_bob``` environment database, executes the
 ```BuilderBob::DataTemplates::MinimalConfiguration.generate_data``` class
 method, and then dumps the ```builder_bob``` environment database to an
-sql file to
-```lib/builder_bob/data_templates/minimal_configuration/minimal_configuration.sql```
+sql file to ```lib/builder_bob/data_templates/minimal_configuration/minimal_configuration.sql```
 
 ### Reset database and load a data template named minimal_configuration
 ```
