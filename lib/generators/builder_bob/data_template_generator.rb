@@ -14,8 +14,8 @@ module BuilderBob
           "module BuilderBob\n"\
           "  module DataTemplates\n"\
           "    class #{name.camelize}\n"\
-          "      # Use this method to create data however you wish\n"\
-          "      def self.data\n"\
+          "      # This method will be called when running rake builder_bob:save_data_template\[template_name\]\n"\
+          "      def self.generate_data\n"\
           "      end\n"\
           "    end\n"\
           "  end\n"\
