@@ -7,6 +7,7 @@ Postgresql is currently the only supported database adapter.
 ## TODO
 * Add support for other databases
 * Add support to store and load data templates from AWS S3
+* Add section got common gotchyas
 
 ## Installation
 
@@ -41,7 +42,7 @@ rails g builder_bob:data_template minimal_configuration
 
 Save a data template
 ```
-rake builder_bob:save_data_template\[template_name\]
+RAILS_ENV=builder_bob rake builder_bob:save_data_template\[template_name\]
 ```
 
 Reset database and load a data template
