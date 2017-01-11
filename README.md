@@ -63,8 +63,7 @@ end
 
 ### Save a data template named minimal_configuration
 ```
-RAILS_ENV=builder_bob rake
-builder_bob:save_data_template\[minimal_configuration\]
+RAILS_ENV=builder_bob rake builder_bob:save_data_template\[minimal_configuration\]
 ```
 
 This task resets the ```builder_bob``` environment database, executes the
